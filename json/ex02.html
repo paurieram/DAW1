@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <p>Aquestra es el nom del primer alumne:</p>
+<p> Nom: <span id="nom"></span></p>
+<p>Aquest es el cognom i el mail del segon alumne: </p>
+<p>Cognom: <span id="cognom"></span></p>
+<p>Email: <span id="email"></span></p>
+<p>Aquestes son les dades de l'alumne 5</p>
+<p> Nom: <span id="nom2"></span></p>
+<p>Cognom: <span id="cognom2"></span></p>
+<p>Email: <span id="email2"></span></p>
+<p>Telefon: <span id="telefon"></span></p> -->
+<p>posicio: <span id="posicio"></span></p>
+<p>nom: <span id="nom"></span></p>
+<p>Cognom: <span id="cognom"></span></p>
+<p>email: <span id="email"></span></p>
+<p>telefon: <span id="telefon"></span></p>
+<script>
+var contingutJSON ={
+"alumne":[
+{
+"nom":"marica1",
+"cognom":"maricon1",
+"email":"maricon1@gmail.com",
+"telefon":123456789
+},
+{
+"nom":"marica2",
+"cognom":"maricon2",
+"email":"maricon2@gmail.com",
+"telefon":223456789
+},
+{
+"nom":"marica3",
+"cognom":"maricon3",
+"email":"maricon3@gmail.com",
+"telefon":323456789
+},
+{
+"nom":"marica4",
+"cognom":"maricon4",
+"email":"maricon4@gmail.com",
+"telefon":423456789
+},
+{
+"nom":"marica5",
+"cognom":"maricon5",
+"email":"maricon5@gmail.com",
+"telefon":523456789
+},
+]
+};
+var x = 0;
+mostrar();
+
+function mostrar(){
+document.getElementById("posicio").innerHTML = x+1;
+document.getElementById("nom").innerHTML = contingutJSON.alumne[x].nom;
+document.getElementById("cognom").innerHTML = contingutJSON.alumne[x].cognom;
+document.getElementById("email").innerHTML = contingutJSON.alumne[x].email;
+document.getElementById("telefon").innerHTML = contingutJSON.alumne[x].telefon;
+}
+function sumar(){
+    if (x==contingutJSON.alumne.length-1){
+        x=0;
+    }else{
+        x++;
+    }
+    mostrar();
+}
+function restar(){
+    if(x==0){
+        x=contingutJSON.alumne.length-1;
+    }else{
+        x--;
+    }
+    mostrar();
+}
+// document.getElementById("nom").innerHTML = contingutJSON.alumne[0].nom;
+// document.getElementById("email").innerHTML = contingutJSON.alumne[1].email;
+// document.getElementById("cognom").innerHTML = contingutJSON.alumne[1].cognom;
+// document.getElementById("nom2").innerHTML = contingutJSON.alumne[4].nom;
+// document.getElementById("cognom2").innerHTML = contingutJSON.alumne[4].cognom;
+// document.getElementById("email2").innerHTML = contingutJSON.alumne[4].email;
+// document.getElementById("telefon").innerHTML = contingutJSON.alumne[4].telefon;
+</script>
+<button onclick="restar();"><----</button>
+<button onclick="sumar();">----></button>
+</body>
+</html>

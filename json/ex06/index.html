@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="funcions.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/css.css" /> -->
+    <!-- <script src="https://kit.fontawesome.com/f64b53cc9a.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <p>habitatge:<span id="habitatge"></span></p>
+    <p>carrer:<input type="text" id="carrer"></p>
+    <p>num:<input type="text" id="num"></p>
+    <p>porta:<input type="text" id="porta"></p>
+    <p>habitant:<span id="habitant"></span></p>
+    <p>nif:<input id="nif" type="text"></p>
+    <p>nom:<input id="nom" type="text"></p>
+    <p>cognoms:<input id="cognoms" type="text"></p>
+    <p>data:<input id="data" type="text"></p>
+    <p>sexe:<input id="sexe" type="text"></p>
+    <button onclick="modify();">Modifica</button><button onclick="Delete();">Elimina</button><button
+        onclick="create();">Crea</button>
+    <script>
+        var contingutJSON = {
+            "habitatges": [
+                {
+                    "carrer": "1",
+                    "num": 12,
+                    "porta": "1",
+                    "habitants": [{ "nif": "123456789A", "nom": "Joan1", "cognoms": "si1 no1", "data": "30-2-21", "sexe": "altres1" }, { "nif": "153456789A", "nom": "Joan1.5", "cognoms": "si1.5 no1.5", "data": "30-2-21", "sexe": "altres1" }]
+                },
+                {
+                    "carrer": "2",
+                    "num": 22,
+                    "porta": "2",
+                    "habitants": [{ "nif": "223456789A", "nom": "Joan2", "cognoms": "si2 no1", "data": "30-2-22", "sexe": "altres2" }, { "nif": "253456789A", "nom": "Joan2.5", "cognoms": "si2.5 no2.5", "data": "30-2-22", "sexe": "altres2" }]
+                },
+                {
+                    "carrer": "3",
+                    "num": 32,
+                    "porta": "3",
+                    "habitants": [{ "nif": "323456789A", "nom": "Joan3", "cognoms": "si3 no1", "data": "30-2-23", "sexe": "altres3" }, { "nif": "353456789A", "nom": "Joan3.5", "cognoms": "si3.5 no3.5", "data": "30-2-23", "sexe": "altres3" }]
+                },
+                {
+                    "carrer": "4",
+                    "num": 42,
+                    "porta": "4",
+                    "habitants": [{ "nif": "423456789A", "nom": "Joan4", "cognoms": "si4 no1", "data": "30-2-24", "sexe": "altres4" }, { "nif": "453456789A", "nom": "Joan4.5", "cognoms": "si4.5 no4.5", "data": "30-2-24", "sexe": "altres4" }]
+                },
+                {
+                    "carrer": "5",
+                    "num": 52,
+                    "porta": "5",
+                    "habitants": [{ "nif": "523456789A", "nom": "Joan5", "cognoms": "si5 no1", "data": "30-2-25", "sexe": "altres5" }, { "nif": "553456789A", "nom": "Joan5.5", "cognoms": "si5.5 no5.5", "data": "30-2-25", "sexe": "altres5" }]
+                }]
+        };
+        var chabitatges = 0;
+        var chabitants = 0;
+        mostrar();
+    </script>
+    <p>
+        <button onclick="anteriorhabitatge();">Anterior habitatge</button>
+        <button onclick="seguenthabitatge();">Seguent habitatge</button>
+    </p>
+</body>
+
+</html>
