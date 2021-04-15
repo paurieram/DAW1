@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>habitatge:  <span id="habitatge"></span></p>
+<p>carrer:  <span id="carrer"></span></p>
+<p>num:  <span id="num"></span></p>
+<p>porta: <span id="porta"></span></p>
+<p>habitant:  <span id="habitant"></span></p>
+<p>nif:  <span id="nif"></span></p>
+<p>nom:  <span id="nom"></span></p>
+<p>cognoms:  <span id="cognoms"></span></p>
+<p>data:  <span id="data"></span></p>
+<p>sexe:  <span id="sexe"></span></p>
+<script>
+var contingutJSON ={
+"habitatges":[
+	{
+	"carrer":"1",
+	"num":12,
+	"porta":"1",
+	"habitants":[{"nif":"123456789A","nom":"Joan1","cognoms":"si1 no1","data":"30-2-21","sexe":"altres1"},{"nif":"153456789A","nom":"Joan1.5","cognoms":"si1.5 no1.5","data":"30-2-21","sexe":"altres1"}]
+	},
+	{
+	"carrer":"2",
+	"num":22,
+	"porta":"2",
+	"habitants":[{"nif":"223456789A","nom":"Joan2","cognoms":"si2 no1","data":"30-2-22","sexe":"altres2"},{"nif":"253456789A","nom":"Joan2.5","cognoms":"si2.5 no2.5","data":"30-2-22","sexe":"altres2"}]
+	},
+	{
+	"carrer":"3",
+	"num":32,
+	"porta":"3",
+	"habitants":[{"nif":"323456789A","nom":"Joan3","cognoms":"si3 no1","data":"30-2-23","sexe":"altres3"},{"nif":"353456789A","nom":"Joan3.5","cognoms":"si3.5 no3.5","data":"30-2-23","sexe":"altres3"}]
+	},
+	{
+	"carrer":"4",
+	"num":42,
+	"porta":"4",
+	"habitants":[{"nif":"423456789A","nom":"Joan4","cognoms":"si4 no1","data":"30-2-24","sexe":"altres4"},{"nif":"453456789A","nom":"Joan4.5","cognoms":"si4.5 no4.5","data":"30-2-24","sexe":"altres4"}]
+	},
+	{
+	"carrer":"5",
+	"num":52,
+	"porta":"5",
+	"habitants":[{"nif":"523456789A","nom":"Joan5","cognoms":"si5 no1","data":"30-2-25","sexe":"altres5"},{"nif":"553456789A","nom":"Joan5.5","cognoms":"si5.5 no5.5","data":"30-2-25","sexe":"altres5"}]
+}]};
+var chabitatges = 0;
+var chabitants = 0;
+mostrar();
+function mostrar(){
+document.getElementById("habitatge").innerHTML = chabitatges+1;
+document.getElementById("carrer").innerHTML = contingutJSON.habitatges[chabitatges].carrer;
+document.getElementById("num").innerHTML = contingutJSON.habitatges[chabitatges].num;
+document.getElementById("porta").innerHTML = contingutJSON.habitatges[chabitatges].porta;
+document.getElementById("habitant").innerHTML = chabitants+1;
+document.getElementById("nif").innerHTML = contingutJSON.habitatges[chabitatges].habitants[chabitants].nif;
+document.getElementById("nom").innerHTML = contingutJSON.habitatges[chabitatges].habitants[chabitants].nom;
+document.getElementById("cognoms").innerHTML = contingutJSON.habitatges[chabitatges].habitants[chabitants].cognoms;
+document.getElementById("data").innerHTML = contingutJSON.habitatges[chabitatges].habitants[chabitants].data;
+document.getElementById("sexe").innerHTML = contingutJSON.habitatges[chabitatges].habitants[chabitants].sexe;
+}
+function anteriorhabitatge(){
+    if (chabitatges==0){
+        chabitatges = contingutJSON.habitatges.length-1;
+    } else {
+        chabitatges--;
+    }
+    chabitants=0;
+    mostrar();
+}
+function seguenthabitatge(){
+    if (chabitatges>=contingutJSON.habitatges.length-1){
+        chabitatges = 0;
+    } else {
+        chabitatges++;
+    }
+    chabitants=0;
+    mostrar();
+}
+function seguenthabitant(){
+    if (chabitants==0){
+        chabitants = contingutJSON.habitatges[chabitatges].habitants.length-1;
+    } else {
+        chabitants--;
+    }
+    mostrar();
+}
+function seguenthabitant(){
+    if (chabitants>=contingutJSON.habitatges[chabitatges].habitants.length-1){
+        chabitants = 0;
+    } else {
+        chabitants++;
+    }
+    mostrar();
+}
+function seleccionarhabitatge(){
+	chabitatges = document.getElementById("seleccionarhabitatge1").value-1;
+    mostrar();
+}
+function seleccionarhabitant(){
+	chabitants = document.getElementById("seleccionarhabitant1").value-1;
+    mostrar();
+}
+</script>
+<p>
+	<button onclick="seguenthabitatge();">Anterior habitatge</button>
+	<button onclick="seguenthabitatge();">Seguent habitatge</button>
+</p><p>
+	<button onclick="seguenthabitant();">Anterior habitant</button>
+	<button onclick="seguenthabitant();">Seguent habitant</button>
+</p>
+<p>
+	<label for="quantity">introdueix un nombre :</label>
+	<input type="number" id="seleccionarhabitant1" name="quantity" min="1" max="2">
+	<button onclick="seleccionarhabitant();">habitant</button>
+	<p></p>
+	<label for="quantity">introdueix un nombre 	:</label>
+	<input type="number" id="seleccionarhabitatge1" name="quantity" min="1" max="5">
+	<button onclick="seleccionarhabitatge();">habitatge</button>
+</p>
+</body>
+</html>
