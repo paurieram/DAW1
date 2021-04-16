@@ -1,2 +1,2 @@
 # DAW1
-Feies 2020-21 (DAW1)
+Feines 2020-21 (DAW1)
