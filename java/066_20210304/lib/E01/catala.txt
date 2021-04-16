@@ -1,0 +1,7 @@
+dilluns,dl
+dimarts,dm
+dimecres,dx
+dijous,dj
+divendres,dv
+dissabte,ds
+diumenge,dg

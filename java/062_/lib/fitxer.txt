@@ -1,0 +1,21 @@
+Nom;Id;Nom;Primer cognom
+1;3976;Daniel;Barbancho
+2;6902;Xavier;Bermúdez
+3;4608;Joel;Berrocal
+4;3753;Marc;Bouzas
+5;3001;Nil;Carvajal
+6;3975;Quim;Comas
+7;3003;Aleix;Deumal
+8;3935;Pau;Domenech
+9;3944;Gerard;Fernandez
+10;3967;Sergio;Garcia
+11;3939;Adrian;Gil
+12;4594;Oriol;Pacheco
+13;3971;Marcel Josep;Pauli
+14;6988;Pol;Pavon
+15;3929;Gerard;Pedrero
+16;6853;Marti;Puig
+17;3987;Ruben;Recolons
+18;6989;Josep;Recolons
+19;2874;Pau;Riera
+20;3920;Carlos Abel;Silva
