@@ -1,0 +1,43 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    /* border:5px solid red; */
+    margin: 0 20% 0 20%;
+    box-shadow: 3px 5px 5px blue;
+}
+li {
+    /* border:5px solid blue; */
+    margin: 0 5px 0 5px;
+    background-color: blueviolet;
+    text-align: center;
+    box-shadow: 3px 5px 5px blue;
+    width: 200px;
+    
+}
+a {
+    text-decoration: none;
+    color: yellow;
+    border-left:5px black;
+}
+a:hover{
+    color: red;
+}
+li:hover{
+    background-color:  green;
+}
+ul:hover{
+    box-shadow: 5px  yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

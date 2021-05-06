@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <header>
+		<title>Nueva Cuenta</title>
+		<link rel="stylesheet" type="text/css" href="css/newacc.css" />
+	</header>
+  <div  class="form">
+    <form id="contactform"> 
+      <p class="contact"><label for="name">Nom</label></p> 
+      <input id="name" name="name" placeholder="Nom i cognoms" required="" tabindex="1" type="text"> 
+
+      <p class="contact"><label for="email">Mail</label></p> 
+      <input id="email" name="email" placeholder="example@domini.com" required="" type="email"> 
+
+            <p class="contact"><label for="username">Nou usuari</label></p> 
+      <input id="username" name="username" placeholder="Nom d'usuari" required="" tabindex="2" type="text"> 
+
+            <p class="contact"><label for="password">Nova contrasenya</label></p> 
+      <input type="password" id="password" name="contrasenya" required="" type="text"> 
+            <p class="contact"><label for="repassword">Confirma la contrasenya</label></p> 
+      <input type="password" id="password" name="contrasenya" required="" type="text"> 
+
+           <fieldset>
+             <label>Data de naixement</label>
+              <label class="month"> 
+              <select class="select-style" name="BirthMonth">
+                <option value="">Mes</option>
+                <option  value="01">Gener</option>
+                <option value="02">Febrer</option>
+                <option value="03" >Març</option>
+                <option value="04">Abril</option>
+                <option value="05">Maig</option>
+                <option value="06">Juny</option>
+                <option value="07">Juriol</option>
+                <option value="08">Augost</option>
+                <option value="09">Septembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Novembre</option>
+                <option value="12" >Desembre</option>
+              </label>
+             </select>    
+            <label><input class="birthday" maxlength="2" name="BirthDay"  placeholder="Dia" required=""></label>
+            <label><input class="birthyear" maxlength="4" name="BirthYear" placeholder="Any" required=""></label>
+          </fieldset>
+
+        <select class="select-style gender" name="gender">
+        <option value="select">Soc</option>
+        <option value="m">Home</option>
+        <option value="f">Dona</option>
+        <option value="others">Altres</option>
+        </select><br><br>
+
+        <p class="contact"><label for="phone">Tel</label></p> 
+        <input id="phone" name="phone" placeholder="000 00 00 00" required="" type="text"> <br>
+        <input class="buttom" name="submit" id="submit" tabindex="5" value="Registrar-me" type="submit"> 	 
+    </form> 
+  </div>
+</body>
+</html>
