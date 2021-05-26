@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Items</title>
+      <!-- <link rel="stylesheet" type="text/css" href="css/estilos.css" /> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+   </head>
+
+   <body>
+      <div class="container p-5">
+         <div class="row">
+            <div class="col-8" id="loginForm">
+               <form>
+                  <div class="form-group row">
+                     <label for="title" class="col-4 col-form-label">Correu electrònic:</label>
+                     <div class="col-8">
+                        <input type="email" class="form-control" id="loginEmail">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="content" class="col-4 col-form-label">Contrasenya:</label>
+                     <div class="col-8">
+                        <input type="password" class="form-control" id="loginPassword">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <div class="offset-4 col-8">
+                        <button type="button" id="crearUsuari" class="btn btn-outline-primary float-right">Registrar un nou usuari</button>
+                        <button type="button" id="login" class="btn btn-default float-right mr-3">Entrar</button>
+                     </div> 
+                  </div>
+               </form>
+            </div>
+
+            <div class="col-8" id="signupForm" style="display: none;">
+               <form>
+                  <div class="form-group row">
+                     <label for="title" class="col-4 col-form-label">Correu electrònic:</label>
+                     <div class="col-8">
+                        <input type="email" class="form-control" id="signupEmail">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="content" class="col-4 col-form-label">Contrasenya:</label>
+                     <div class="col-8">
+                        <input type="password" class="form-control" id="signupPassword">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="content" class="col-4 col-form-label">Confirmar contrasenya:</label>
+                     <div class="col-8">
+                        <input type="password" class="form-control" id="signupPasswordConfirm">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <div class="offset-4 col-8">
+                        <button type="button" id="signup" class="btn btn-default float-right">Enviar</button>
+                     </div> 
+                  </div>
+               </form>
+            </div>
+
+            <div class="col-8" id="itemsForm" style="display: none;">
+               <form>
+                  <div class="form-group row">
+                     <label for="title" class="col-4 col-form-label">Títol:</label>
+                     <div class="col-8">
+                        <input type="text" class="form-control" id="title">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="content" class="col-4 col-form-label">Contingut:</label>
+                     <div class="col-8">
+                        <input type="text" class="form-control" id="content">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="image" class="col-4 col-form-label">Imatge:</label>
+                     <div class="col-8">
+                        <input type="file" class="form-control-file" id="image">
+                     </div>
+                  </div>
+                  <div class="form-group row">
+                     <div class="offset-4 col-8">
+                        <button type="button" id="save" class="btn btn-default float-right">Guardar</button>
+                     </div> 
+                  </div>
+                  <input type="hidden" id="elementId">
+               </form>
+            </div>
+
+            <div class="col-4">
+               <div id="alert" role="alert"></div>
+            </div>
+         </div>         
+         <div class="table-responsive">
+            <table class="table table-hover" id="listItems" style="display: none;" >
+            </table>
+         </div>
+      </div>
+      <script src="./index.js"></script>
+   </body>
+</html>
