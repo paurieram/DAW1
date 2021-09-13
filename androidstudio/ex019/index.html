@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botiga de informatica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body background="img_1.png">
+    <div class="container my-5 bg-secondary">
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <div class="row mt-5"></div>
+        <div class="row">
+            <div class="col-5 offset-1">
+                <form>
+                    <h3>Introduex Producte</h3>
+                    <label for="camp1">Introdueix el nom:</label>
+                    <div class="input-group col-lg-7">
+                        <input type="text" class="form-control" id="camp1" required placeholder="Ordinador">
+                    </div>
+                    <label for="camp2">Introdueix el color:</label>
+                    <div class="input-group col-lg-7">
+                        <input type="text" class="form-control" id="camp2" required placeholder="Blanc">
+                    </div>
+                    <label for="camp3">Introdueix la quantitat:</label>
+                    <div class="input-group col-lg-7">
+                        <input type="text" class="form-control" id="camp3" required placeholder="10">
+                    </div>
+                    <div class="ml-4 mt-2">
+                        <input type="submit" value="Guardar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1>Productes</h1>
+                <ul></ul>
+            </div>
+        </div>
+        <!-- <button class="btn btn-info my-2 mx-3 unsubscribe">unsubscribe from changes</button> -->
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <!-- Initialize Firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script> -->
+    <script src="sandbox.js"></script>
+</body>
+
+</html>
