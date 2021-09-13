@@ -1,0 +1,1 @@
+DROP USER​ 'rierapau_admin'@'localhost'

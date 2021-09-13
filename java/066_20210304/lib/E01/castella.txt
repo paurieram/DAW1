@@ -1,7 +1,0 @@
-lunes,lu
-martes,ma
-miércoles,mi
-jueves,ju
-viernes,vi
-sábado,sa
-domingo,do
