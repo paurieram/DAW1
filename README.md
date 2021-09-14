@@ -13,7 +13,7 @@ Feines 2020-21
  # [JSON](https://github.com/paurigine/DAW1/tree/main/json)
  ## Ex009/
  ---
- # [SQL]()
+ # [SQL](https://github.com/paurigine/DAW1/tree/main/sql)
  ## Ex002/
  ---
  # [ANDROID STUDIO](https://github.com/paurigine/DAW1/tree/main/androidstudio)
