@@ -1,21 +1,40 @@
 # DAW1
+
 Feines 2020-21
  ---
- # [FIREBASE](https://github.com/paurigine/DAW1/tree/main/firebase)
- ## Ex004/
+
+# [FIREBASE](https://github.com/paurigine/DAW1/tree/main/firebase)
+
+## 004
+
  ---
- # [HTML](https://github.com/paurigine/DAW1/tree/main/html)
- ## Ex010/
+
+# [HTML](https://github.com/paurigine/DAW1/tree/main/html)
+
+## 010
+
  ---
- # [JAVA](https://github.com/paurigine/DAW1/tree/main/java)
- ## Ex087/
+
+# [JAVA](https://github.com/paurigine/DAW1/tree/main/java)
+
+## 089
+
  ---
- # [JSON](https://github.com/paurigine/DAW1/tree/main/json)
- ## Ex009/
+
+# [JSON](https://github.com/paurigine/DAW1/tree/main/json)
+
+## 009
+
  ---
- # [SQL](https://github.com/paurigine/DAW1/tree/main/sql)
- ## Ex002/
+
+# [SQL](https://github.com/paurigine/DAW1/tree/main/sql)
+
+## 006
+
  ---
- # [ANDROID STUDIO](https://github.com/paurigine/DAW1/tree/main/androidstudio)
- ## Ex017/
+
+# [ANDROID STUDIO](https://github.com/paurigine/DAW1/tree/main/androidstudio)
+
+## 017
+
  ---
