@@ -1,6 +1,6 @@
 # DAW1
 
-> Feines 2020-21
+> 2020-21
 
 # [FIREBASE](https://github.com/paurigine/DAW1/tree/main/firebase)
 
